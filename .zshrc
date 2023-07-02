@@ -106,8 +106,16 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # TODO: hacer archivo con funciones para que las cargue lazy
+function runcpp(){
+  local filename="$1"
+  filename="${filename%.cpp}"  # Remove the .c extension
+  gcc "${filename}.c" -o "$filename" && "./$filename" && rm "$filename"
+}
 function runc(){
   local filename="$1"
   filename="${filename%.c}"  # Remove the .c extension
   gcc "${filename}.c" -o "$filename" && "./$filename" && rm "$filename"
 }
+bindkey '^I'   complete-word       # tab          | complete
+bindkey '^[[Z' autosuggest-accept  # shift + tab  | autosuggest
+
