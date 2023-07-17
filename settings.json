@@ -1,0 +1,224 @@
+{
+  "files.eol": "\n",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.fontSize": 17,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "'Cascadia Code PL',  monospace",
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "editor.tokenColorCustomizations": {
+    "comments": "#a3a8a8",
+    "[One Dark Pro]": {
+      "textMateRules": []
+    }
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro]": {}
+  },
+  // opcions pretier
+  "prettier.printWidth": 90,
+  "prettier.bracketSpacing": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "terminal.integrated.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "tab.activeBorder": "#ffff00",
+      "editorCursor.foreground": "#ffff00"
+    },
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "'Hack NF','Cascadia Code PL',  monospace",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu-18.04 (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu-18.04"
+      ]
+    }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.inlineSuggest.enabled": true,
+  //*********************FLUTTER************************
+  // Causes the debug view to automatically appear when a breakpoint is hit. This
+  // setting is global and not configurable per-language.
+  "debug.openDebug": "openOnDebugBreak",
+  "terminal.integrated.cursorStyle": "line",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "redhat.telemetry.enabled": false,
+  //probar
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  //Probar
+  "vim.useSystemClipboard": true,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "command": "editor.action.revealDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    // { no funcinoa
+    //   "before": [
+    //     "<leader>",
+    //     "/"
+    //   ],
+    //   "command": "editor.action.commentLine",
+    //   "when": "editorTextFocus && !editorReadonly"
+    // },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ],
+      "when": "editorTextFocus && !editorReadOnly"
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ],
+      "when": "editorTextFocus && !editorReadOnly"
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-k>": false,
+    "<C-w>": false,
+    "<C-h>": false,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-y>": false,
+    "<C-n>": false,
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.accessibilitySupport": "off",
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.stickyScroll.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "git.openRepositoryInParentFolders": "never",
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+}
