@@ -3,7 +3,6 @@ clear mod5
 clear Lock
 
 keycode 64 = Alt_L
-
 keycode 108 = BackSpace
 
 keycode 66 = Escape
@@ -11,4 +10,6 @@ keycode 9 = Caps_Lock
 
 add mod1 = Alt_L
 add Lock = Caps_Lock
-add mod5 = BackSpace
+
+
+
